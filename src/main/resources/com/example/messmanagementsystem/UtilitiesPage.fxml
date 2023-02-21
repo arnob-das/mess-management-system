@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #04306b;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.messmanagementsystem.UtilitiesController">
+   <children>
+      <Pane prefHeight="38.0" prefWidth="1000.0" style="-fx-background-color: #ccc;">
+         <children>
+            <Button layoutX="502.0" layoutY="5.0" mnemonicParsing="false" onAction="#gotoProfilePage" style="-fx-background-color: #ccc;" text="Profile">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="adminBtn" layoutX="598.0" layoutY="5.0" mnemonicParsing="false" onAction="#gotoAdminPage" style="-fx-background-color: #ccc;" text="Admin">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="300.0" layoutY="6.0" mnemonicParsing="false" onAction="#gotoDashboardPage" style="-fx-background-color: #ccc;" text="Dashboard">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="412.0" layoutY="6.0" mnemonicParsing="false" onAction="#gotoMealPage" style="-fx-background-color: #ccc;" text="Meals">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <TextField fx:id="utilitiesCostField" layoutX="409.0" layoutY="184.0" prefHeight="38.0" prefWidth="180.0" promptText="Amount" style="-fx-border-color: orange;">
+         <font>
+            <Font size="17.0" />
+         </font></TextField>
+      <Button layoutX="410.0" layoutY="246.0" mnemonicParsing="false" onAction="#addUtilities" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: #4152b3;" text="Add Utility" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <TextField fx:id="utilityNameField" layoutX="410.0" layoutY="119.0" prefHeight="38.0" prefWidth="180.0" promptText="Utility Name" style="-fx-border-color: orange;">
+         <font>
+            <Font size="17.0" />
+         </font></TextField>
+      <Button layoutX="898.0" layoutY="6.0" mnemonicParsing="false" onAction="#signOutAction" style="-fx-background-color: #ccc;" text="Signout">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <ComboBox fx:id="selectUtilityName" layoutX="409.0" layoutY="360.0" prefHeight="38.0" prefWidth="187.0" promptText="Select Utility" style="-fx-border-color: orange;" />
+      <TextField fx:id="selectedUtilityAmount" layoutX="409.0" layoutY="417.0" prefHeight="38.0" prefWidth="187.0" promptText="Amount" style="-fx-border-color: orange;" />
+      <Button layoutX="409.0" layoutY="476.0" mnemonicParsing="false" onAction="#updateSelectedUtility" prefHeight="40.0" prefWidth="77.0" style="-fx-background-color: #4152b3;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="519.0" layoutY="476.0" mnemonicParsing="false" onAction="#deleteSelectedUtility" prefHeight="40.0" prefWidth="77.0" style="-fx-background-color: #4152b3;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Text fill="WHITE" layoutX="409.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Utility">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="410.0" layoutY="343.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update Utility">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Label fx:id="addUtilityError" layoutX="410.0" layoutY="223.0" text="Label" textFill="WHITE" />
+      <Label fx:id="updateDeleteUtilityError" layoutX="410.0" layoutY="455.0" text="Label" textFill="WHITE" />
+   </children>
+</AnchorPane>

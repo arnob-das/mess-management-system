@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #04306b;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.messmanagementsystem.ProfileController">
+   <children>
+      <Pane layoutX="-7.0" prefHeight="39.0" prefWidth="1008.0" style="-fx-background-color: #ccc;">
+         <children>
+            <Button layoutX="277.0" layoutY="5.0" mnemonicParsing="false" onAction="#gotoDashboardPage" style="-fx-background-color: #ccc;" text="Dashboard">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
+            <Button layoutX="393.0" layoutY="5.0" mnemonicParsing="false" onAction="#gotoMealPage" prefHeight="25.0" prefWidth="66.0" style="-fx-background-color: #ccc;" text="Meal">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
+            <Button fx:id="utilitiesPage" layoutX="492.0" layoutY="5.0" mnemonicParsing="false" onAction="#gotoUtilitiesPage" prefHeight="30.0" prefWidth="81.0" style="-fx-background-color: #ccc;" text="Utilities">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
+            <Button fx:id="adminBtn" layoutX="603.0" layoutY="5.0" mnemonicParsing="false" onAction="#gotoAdminPage" prefHeight="25.0" prefWidth="66.0" style="-fx-background-color: #ccc;" text="Admin">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
+            <Button layoutX="863.0" layoutY="5.0" mnemonicParsing="false" onAction="#signOutUser" prefHeight="30.0" prefWidth="91.0" style="-fx-background-color: #ccc;" text="Sign Out">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
+         </children>
+      </Pane>
+      <Text fx:id="displayName" fill="WHITE" layoutX="217.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Arnob Das" textAlignment="CENTER" wrappingWidth="560.487548828125">
+         <font>
+            <Font name="System Bold" size="52.0" />
+         </font>
+      </Text>
+      <Text fx:id="displayEmail" fill="WHITE" layoutX="277.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="contact.arnobdas@gmail.com" textAlignment="CENTER" wrappingWidth="439.0748291015625">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text fx:id="messName" fill="WHITE" layoutX="277.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mess Name: Main Mess" textAlignment="CENTER" wrappingWidth="439.0748291015625">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="userRole" fill="WHITE" layoutX="433.0" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Role: ADMIN" textAlignment="CENTER" wrappingWidth="126.7789306640625">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="newPassword" layoutX="363.0" layoutY="364.0" prefHeight="39.0" prefWidth="274.0" promptText="New Password">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </TextField>
+      <Button layoutX="363.0" layoutY="438.0" mnemonicParsing="false" onAction="#updateNewPassword" prefHeight="39.0" prefWidth="274.0" style="-fx-background-color: #4152b3;" text="Update Password" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Label fx:id="updatePasswordLabel" layoutX="364.0" layoutY="413.0" text="Password Is Empty" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

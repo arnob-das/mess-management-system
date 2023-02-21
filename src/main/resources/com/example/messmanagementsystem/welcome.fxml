@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.QuadCurve?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.messmanagementsystem.WelcomeController">
+   <children>
+      <QuadCurve controlX="838.7999877929688" controlY="266.60003662109375" endX="1002.800048828125" endY="1.0" fill="#4152b3" layoutX="30.0" layoutY="380.0" startX="-54.0000114440918" startY="33.800018310546875" stroke="#4152b3" strokeType="INSIDE" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#4152b3" height="441.0" layoutX="-14.0" layoutY="-27.0" stroke="#4152b3" strokeType="INSIDE" width="1014.0" />
+      <Text fill="WHITE" layoutX="43.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mess Management System">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="43.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A One-Stop Solution for Your Facility">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text fill="#19dbe1" layoutX="43.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Easily manage meal plans, house rent,">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Text fill="#19dbe1" layoutX="43.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text="utility bills with our user-friendly desktop application.">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Button layoutX="203.0" layoutY="321.0" mnemonicParsing="false" onAction="#gotoLoginPage" prefHeight="41.0" prefWidth="112.0" style="-fx-background-radius: 50; -fx-border-color: #fff; -fx-background-color: #4152b3; -fx-border-radius: 50; -fx-border-width: 2;" text="Sign In" textFill="#dfdfdf">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="43.0" layoutY="321.0" mnemonicParsing="false" onAction="#gotoSignUpPage" prefHeight="41.0" prefWidth="112.0" style="-fx-background-radius: 50; -fx-background-color: #fff;" text="Sign Up" textFill="#4152b3">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Text layoutX="331.0" layoutY="581.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Copyright © 2023 Mess Management System | All rights reserved" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8fb1d1" height="200.0" layoutX="523.0" layoutY="207.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-rotate: -3;" width="200.0" />
+      <ImageView fitHeight="279.0" fitWidth="409.0" layoutX="533.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true" style="-fx-rotate: -3;">
+         <image>
+            <Image url="@../../../../../../assets/home.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

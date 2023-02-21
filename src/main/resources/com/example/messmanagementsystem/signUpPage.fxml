@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="999.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.messmanagementsystem.SignUpController">
+   <children>
+      <Label layoutX="680.0" layoutY="116.0" text="Full Name" />
+      <TextField fx:id="displayNameField" layoutX="679.0" layoutY="141.0" prefHeight="39.0" prefWidth="195.0" style="-fx-background-color: #A0A9D9;" />
+      <Label layoutX="455.0" layoutY="210.0" text="Email Address" />
+      <TextField fx:id="emailField" layoutX="455.0" layoutY="231.0" prefHeight="39.0" prefWidth="195.0" style="-fx-background-color: #A0A9D9;" />
+      <PasswordField fx:id="passwordField" layoutX="679.0" layoutY="231.0" prefHeight="39.0" prefWidth="195.0" style="-fx-background-color: #A0A9D9;" />
+      <Label layoutX="678.0" layoutY="207.0" text="Password" />
+      <Button fx:id="signUpBtnFOrUser" layoutX="455.0" layoutY="431.0" mnemonicParsing="false" onAction="#signUpActionForUser" prefHeight="39.0" prefWidth="195.0" style="-fx-background-color: #4152B3;" text="Sign Up As User" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Label layoutX="452.0" layoutY="301.0" text="Phone No" />
+      <TextField fx:id="phoneNoField" layoutX="452.0" layoutY="326.0" prefHeight="39.0" prefWidth="195.0" style="-fx-background-color: #A0A9D9;" />
+      <TextField fx:id="nidField" layoutX="679.0" layoutY="327.0" prefHeight="39.0" prefWidth="195.0" style="-fx-background-color: #A0A9D9;" />
+      <Label layoutX="682.0" layoutY="301.0" text="Nid No" />
+      <Label fx:id="signUpErrorLabel" layoutX="336.0" layoutY="176.0" text="Error Message" textFill="#e41515" visible="false" />
+      <Label layoutX="453.0" layoutY="494.0" text="Already Registered?" />
+      <Button layoutX="455.0" layoutY="520.0" mnemonicParsing="false" onAction="#gotoSignInPage" prefHeight="40.0" prefWidth="428.0" style="-fx-background-color: #4152B3;" text="Signin" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <Circle fill="#4152b3" layoutX="-10.0" layoutY="316.0" radius="406.0" stroke="#4152b3" strokeType="INSIDE" />
+      <Label layoutX="453.0" layoutY="406.0" text="Label" visible="false" />
+      <Text fill="WHITE" layoutX="118.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create">
+         <font>
+            <Font name="System Bold" size="44.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="45.0" layoutY="351.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Account">
+         <font>
+            <Font name="System Bold" size="44.0" />
+         </font>
+      </Text>
+      <Text fill="#4152b3" layoutX="491.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MESS MANAGEMENT SYSTEM">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Text>
+      <Label fx:id="fullNameErrorField" layoutX="681.0" layoutY="227.0" text="Label" textFill="RED" visible="false" />
+      <Label fx:id="emailErrorField" layoutX="682.0" layoutY="223.0" text="Label" textFill="RED" visible="false" />
+      <Label fx:id="nidErrorField" layoutX="681.0" layoutY="317.0" text="Label" textFill="RED" visible="false" />
+      <Label fx:id="phoneNoErrorField" layoutX="453.0" layoutY="410.0" text="Label" textFill="RED" visible="false" />
+      <Label layoutX="456.0" layoutY="116.0" text="Mess Name" />
+      <TextField fx:id="displayMessNameField" layoutX="455.0" layoutY="141.0" prefHeight="39.0" prefWidth="195.0" style="-fx-background-color: #A0A9D9;" />
+      <Label fx:id="messNameErrorField" layoutX="456.0" layoutY="185.0" text="Label" textFill="RED" visible="false" />
+      <Button fx:id="signUpBtn1forManager" layoutX="684.0" layoutY="431.0" mnemonicParsing="false" onAction="#signUpActionForManager" prefHeight="39.0" prefWidth="195.0" style="-fx-background-color: #4152B3;" text="Sign Up As Manager" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="682.0" layoutY="406.0" text="Label" visible="false" />
+   </children>
+</AnchorPane>
